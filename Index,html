@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calm Legs Therapy | Nervous System Regulation for Restless Legs</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    line-height:1.6;
+    color:#333;
+}
+
+header{
+    background:#2c6e91;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:3rem;
+}
+
+.btn{
+    display:inline-block;
+    background:#f4b400;
+    color:black;
+    padding:12px 24px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f7f7f7;
+    padding:25px;
+    border-radius:10px;
+}
+
+.testimonial{
+    background:#eef7fb;
+    padding:25px;
+    border-left:5px solid #2c6e91;
+    margin:20px 0;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Calm Legs Therapy</h1>
+    <p>Nervous System Regulation & Movement-Based Care for Restless Legs Symptoms</p>
+
+    <a href="#contact" class="btn">Schedule a Free Consultation</a>
+</header>
+
+<section>
+    <h2>Finally Understand Why Your Legs Won't Relax</h2>
+
+    <p>
+        Many people with restless legs feel trapped in a cycle of tension,
+        poor sleep, anxiety, and constant movement.
+    </p>
+
+    <p>
+        Our approach focuses on calming an over-responsive nervous system,
+        improving movement patterns, and creating practical strategies that
+        help you feel more comfortable and sleep more consistently.
+    </p>
+</section>
+
+<section>
+    <h2>How We Help</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Nervous System Regulation</h3>
+            <p>
+                Breathing, relaxation, and sensory techniques designed
+                to reduce nervous system sensitivity.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Movement Therapy</h3>
+            <p>
+                Targeted exercises and mobility work that may help reduce
+                discomfort and improve body awareness.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sleep Optimization</h3>
+            <p>
+                Practical strategies to improve bedtime routines and support
+                more restorative sleep.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Personalized Coaching</h3>
+            <p>
+                One-on-one guidance tailored to your symptoms,
+                goals, and lifestyle.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Who This Is For</h2>
+
+    <ul>
+        <li>People struggling with restless legs symptoms</li>
+        <li>Those frustrated by disrupted sleep</li>
+        <li>Individuals seeking a non-medication approach</li>
+        <li>People wanting personalized support and education</li>
+    </ul>
+</section>
+
+<section>
+    <h2>What To Expect</h2>
+
+    <ol>
+        <li>60-minute evaluation</li>
+        <li>Review of symptom triggers and history</li>
+        <li>Nervous system assessment</li>
+        <li>Customized home program</li>
+        <li>Ongoing coaching and progression</li>
+    </ol>
+</section>
+
+<section>
+    <h2>Client Success Stories</h2>
+
+    <div class="testimonial">
+        "I finally understood why my symptoms were happening and developed
+        a plan that helped me feel more in control."
+    </div>
+
+    <div class="testimonial">
+        "My evenings became much more manageable and I felt less anxious
+        about going to bed."
+    </div>
+
+    <p><em>Individual results vary.</em></p>
+</section>
+
+<section id="contact">
+    <h2>Book Your Free Consultation</h2>
+
+    <p>
+        Schedule a 15-minute call to discuss your symptoms and determine
+        whether this approach is a good fit.
+    </p>
+
+    <a href="#" class="btn">Book Now</a>
+
+    <p>Email: hello@calmlegstherapy.com</p>
+    <p>Phone: (555) 555-5555</p>
+</section>
+
+<footer>
+    <p>
+        This service provides education, coaching, and movement-based wellness support.
+        It is not a substitute for medical diagnosis or treatment.
+    </p>
+</footer>
+
+</body>
+</html>
