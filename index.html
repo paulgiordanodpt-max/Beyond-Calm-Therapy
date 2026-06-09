@@ -14,14 +14,52 @@
 }
 
 body {
-<nav style="text-align: right; padding: 20px 20px 0; max-width: 1100px; margin: auto;">
-    <a href="./Beyond Calm Guide.pdf" target="_blank" style="color: #2c6e91; font-weight: bold; text-decoration: none;">Beyond Calm Guide (PDF)</a>
-</nav>
-
-<header>
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+/* --- Fixed Navigation Bar Styling --- */
+nav {
+    background: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-weight: bold;
+    color: #2c6e91;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2c6e91;
 }
 
 header {
@@ -132,60 +170,28 @@ footer {
     header h1{
         font-size:2.2rem;
     }
-}
-
-</style>
-    nav {
-    background: #ffffff;
-    padding: 15px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-logo {
-    font-weight: bold;
-    color: #2c6e91;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-links a {
-    color: #555;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.95rem;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #2c6e91;
-}
-
-@media(max-width: 768px) {
     .nav-container {
         flex-direction: column;
         gap: 10px;
     }
 }
+
+</style>
 </head>
 
 <body>
+
+<!-- --- Corrected Navigation Bar Location --- -->
+<nav>
+    <div class="nav-container">
+        <a href="#" class="nav-logo">Calm Legs Therapy</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="./Beyond Calm Guide.pdf" target="_blank" style="color: #2c6e91;">Resources (PDF Guide)</a></li>
+        </ul>
+    </div>
+</nav>
 
 <header>
 
@@ -423,7 +429,6 @@ Get our free guide:
 
 <br>
 
-<!-- Keep the email submission form -->
 <form>
 
 <input
@@ -439,7 +444,6 @@ Send Me The Guide
 
 <br>
 
-<!-- Direct download link button -->
 <div class="center">
     <a href="./Beyond Calm Guide.pdf" target="_blank" class="btn">
         Direct Download: Beyond Calm Guide (PDF)
