@@ -168,14 +168,7 @@ footer {
     padding: 40px 20px;
 }
 
-@media(max-width:768px){
-    header h1{
-        font-size:2.2rem;
-    }
-    .nav-container {
-        flex-direction: column;
-        gap: 10px;
-        .nav-logo-img {
+.nav-logo-img {
     height: 45px;
     width: auto;
     object-fit: contain;
@@ -186,9 +179,17 @@ footer {
     align-items: center;
     gap: 12px;
 }
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.2rem;
+    }
+
+    .nav-container{
+        flex-direction: column;
+        gap: 10px;
     }
 }
-
 </style>
 </head>
 
@@ -196,7 +197,6 @@ footer {
 
 <!-- --- Navigation Bar (Updated to load resources.html in a new tab) --- -->
 <nav>
-   <nav>
     <div class="nav-container">
 
         <div class="nav-brand">
@@ -212,7 +212,6 @@ footer {
         </ul>
 
     </div>
-</nav>
 </nav>
 
 <header>
@@ -454,7 +453,7 @@ Get our free guide:
 
 <br>
 
-<form>
+<form action="your-email-service-endpoint" method="POST">
 
 <input
 type="email"
