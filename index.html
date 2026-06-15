@@ -4,13 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beyond Calm Therapy | Restless Legs & Nervous System Coaching</title>
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    color: #333;
+}
+
+/* --- Navigation Bar Styling --- */
+nav {
+    background: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-weight: bold;
+    color: #2c6e91;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2c6e91;
 }
 
 header {
@@ -21,7 +72,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.6rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
@@ -33,7 +84,7 @@ header p {
 
 .btn {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 30px;
     padding: 14px 28px;
     background: #f4b400;
     color: #000;
@@ -43,92 +94,386 @@ header p {
 }
 
 section {
-    max-width: 900px;
+    max-width: 1100px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
-h2 {
+section h2 {
     text-align: center;
+    margin-bottom: 30px;
     color: #2c6e91;
-    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #f7f7f7;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
 }
 
 .testimonial {
     background: #eef7fb;
-    padding: 20px;
+    padding: 25px;
     border-left: 5px solid #2c6e91;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    padding-left: 25px;
 }
 
 .center {
     text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #2c6e91;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.nav-logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.2rem;
+    }
+
+    .nav-container{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+    <div class="nav-container">
+
+        <div class="nav-brand">
+            <a href="#" class="nav-logo">Beyond Calm Therapy</a>
+            <img src="logo.jpg" alt="Beyond Calm Therapy Logo" class="nav-logo-img">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="resources.html" target="_blank">Resources</a></li>
+            <li><a href="quiz.html" target="_blank">Quiz</a></li>
+        </ul>
+
+    </div>
+</nav>
+
 <header>
-<h1>Struggling With Restless Legs or Nighttime Nervous System Symptoms?</h1>
+
+<h1>
+Struggling With Restless Legs Every Night? Learn How to Calm Your Nervous System and Sleep Better Naturally
+</h1>
+
 <p>
-Learn how to calm your nervous system, reduce nighttime symptoms, and improve sleep using a movement-based, education-first approach.
+Virtual Physical Therapy and Nervous System Coaching for People
+Struggling with Restless Legs Symptoms.
 </p>
 
-<a class="btn" href="booking.html">Book Your Free 15-Min Call</a>
+<!-- UPDATED CTA -->
+<a href="#"
+   class="btn"
+   onclick="window.open('booking.html', '_blank'); return false;">
+   Schedule Your Free Consultation
+</a>
+
 </header>
 
 <section>
-<h2>Why Symptoms Persist</h2>
+
+<h2>Tired of Fighting Your Legs Every Night?</h2>
+
 <p>
-Many people get stuck in cycles of poor sleep, stress sensitivity, and symptom amplification.
-Stretching, medications, and supplements often provide only short-term relief because they do not address nervous system reactivity.
+You may have tried stretching, supplements, medications, massage,
+or countless sleep routines without lasting success.
 </p>
 
-<div class="center">
-<a class="btn" href="booking.html">Book Free Consultation</a>
-</div>
+<br>
+
+<p>
+Many people develop a cycle where symptoms, stress, poor sleep,
+and nervous system sensitivity begin reinforcing one another.
+</p>
+
+<br>
+
+<p>
+Our goal is to help you better understand these patterns and
+develop practical strategies to improve comfort, movement,
+and sleep quality.
+</p>
+
 </section>
 
 <section>
-<h2>Why This Approach Is Different</h2>
-<p>
-We focus on how the nervous system processes threat, movement, and recovery. When sensitivity decreases,
-symptoms often become less disruptive and easier to manage.
-</p>
 
-<div class="center">
-<a class="btn" href="booking.html">See If This Is Right For You</a>
+<h2>The Calm Legs Method™</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Step 1</h3>
+<p>Identify symptom triggers and patterns.</p>
 </div>
+
+<div class="card">
+<h3>Step 2</h3>
+<p>Reduce nervous system sensitivity with targeted regulation strategies.</p>
+</div>
+
+<div class="card">
+<h3>Step 3</h3>
+<p>Build confidence through movement and self-management.</p>
+</div>
+
+<div class="card">
+<h3>Step 4</h3>
+<p>Create sustainable habits that support sleep and recovery.</p>
+</div>
+
+</div>
+
 </section>
 
 <section>
-<h2>What Clients Experience</h2>
+
+<h2>How We Help</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Nervous System Regulation</h3>
+<p>Breathing, relaxation, and sensory strategies.</p>
+</div>
+
+<div class="card">
+<h3>Movement Therapy</h3>
+<p>Targeted exercises to improve comfort and confidence.</p>
+</div>
+
+<div class="card">
+<h3>Sleep Optimization</h3>
+<p>Evidence-informed sleep support and routines.</p>
+</div>
+
+<div class="card">
+<h3>One-on-One Coaching</h3>
+<p>Personalized guidance tailored to your goals.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Conditions We Help Support</h2>
+
+<p class="center">
+Many chronic symptoms involve a sensitive nervous system, changes in pain processing,
+stress responses, sleep disruption, and movement avoidance. Our approach focuses on
+education, nervous system regulation, movement confidence, and symptom management.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Restless Legs Symptoms</h3>
+<p>Strategies to improve symptom management, sleep quality, movement confidence, and nervous system regulation.</p>
+</div>
+
+<div class="card">
+<h3>Chronic Radiculopathy</h3>
+<p>Support for persistent nerve-related symptoms.</p>
+</div>
+
+<div class="card">
+<h3>Chronic Back Pain</h3>
+<p>Support for persistent back pain and movement confidence strategies.</p>
+</div>
+
+<div class="card">
+<h3>Neuralgias & Small fiber neuropathy</h3>
+<p>Nerve sensitivity and symptom management education.</p>
+</div>
+
+<div class="card">
+<h3>Complex Regional Pain Syndrome (CRPS)</h3>
+<p>Movement confidence and desensitization strategies.</p>
+</div>
+
+<div class="card">
+<h3>Fibromyalgia</h3>
+<p>Support for widespread pain and nervous system sensitivity.</p>
+</div>
+
+<div class="card">
+<h3>Migraines & Chronic Tension Headaches</h3>
+<p>Stress and nervous system regulation strategies.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Meet Your Therapist</h2>
+
+<p>
+Hi, I'm Dr. Paul Giordano, PT.
+</p>
+
+<p>
+I help individuals understand movement, sleep, stress, and nervous system sensitivity.
+</p>
+
+</section>
+
+<section>
+
+<h2>Services & Pricing</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Discovery Call</h3>
+<p>15 Minutes</p>
+<p><strong>Free</strong></p>
+</div>
+
+<div class="card">
+<h3>Initial Evaluation</h3>
+<p>60 Minutes</p>
+<p><strong>$199</strong></p>
+</div>
+
+<div class="card">
+<h3>Follow-Up Visit</h3>
+<p>45 Minutes</p>
+<p><strong>$149</strong></p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>What To Expect</h2>
+
+<ol>
+<li>Comprehensive evaluation</li>
+<li>Symptom pattern review</li>
+<li>Nervous system assessment</li>
+<li>Personalized plan</li>
+</ol>
+
+</section>
+
+<section>
+
+<h2>Success Stories</h2>
 
 <div class="testimonial">
-“I finally understood my symptoms and stopped feeling helpless at night.”
-</div>
+“I finally understood why my symptoms were happening.”</div>
 
 <div class="testimonial">
-“My sleep improved once I stopped over-focusing on every sensation.”
-</div>
+“My sleep improved and I felt more in control.”</div>
 
-<div class="center">
-<a class="btn" href="booking.html">Book Your Free Call</a>
-</div>
 </section>
 
-<section>
-<h2>Simple, Focused Support</h2>
-<p>
-Our approach includes education, movement confidence, nervous system regulation strategies,
-and individualized coaching designed to improve function and sleep quality.
+<section id="contact">
+
+<h2>Book Your Free Consultation</h2>
+
+<p class="center">
+Schedule a free 15-minute call to determine fit.
 </p>
 
 <div class="center">
-<a class="btn" href="booking.html">Start Here</a>
+
+<!-- UPDATED CTA -->
+<a href="#"
+   class="btn"
+   onclick="window.open('booking.html', '_blank'); return false;">
+   Book Now
+</a>
+
 </div>
+
+<p class="center">
+Email: paulgiordanodpt@gmail.com
+</p>
+
+<p class="center">
+Phone: (540) 419-2407
+</p>
+
 </section>
+
+<footer>
+
+<p>
+This service provides education and coaching only and is not a substitute for medical care.
+</p>
+
+</footer>
 
 </body>
 </html>
